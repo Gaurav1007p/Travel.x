@@ -1,11 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react' // (or vue / svelte depending on your framework)
 
 export default defineConfig({
   plugins: [react()],
-  // GitHub Pages doesn't serve from `/` reliably for all setups.
-  // This ensures asset URLs resolve correctly.
-  // If you publish to a sub-path later, set it accordingly.
-  base: '/',
+  base: '/Travel.x/', // 👈 Add this line right here
 })
-
