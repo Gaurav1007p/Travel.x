@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react' // (or vue / svelte depending on your framework)
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Travel.x/', // 👈 Add this line right here
+  base: '/Travel.x/', // 👈 Yeh exact line check karo correct hai ya nahi
 })
