@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0A0F1D;
+  color: white;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 107, 107, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(179, 102, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(0, 242, 254, 0.06) 0%, transparent 50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00F2FE, #FF6B6B);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #00F2FE, #B366FF);
+}
+
+* {
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
+  scrollbar-width: thin;
+}
+
+::selection {
+  background-color: rgba(0, 242, 254, 0.3);
+  color: white;
+}
